@@ -1,0 +1,50 @@
+.grande{ 
+font-size: 70px;
+background-color: black;
+}
+.chico{
+	font-size: 40px;
+}
+
+.brand {
+	padding:0;
+}
+
+.chico{
+	font-size: 20px;
+}
+.item{
+	height: 300px;
+}
+.item img{ 
+	height: none;
+	height: 100%;
+	width: 100%;
+	
+}
+.navbar{
+	color: black;
+	margin-bottom: 0px;
+	z-index: 10;
+	/*position: fixed;*/
+	width: 100vw;
+	background-color: rgba(255, 255, 255, 0);
+	border: none;
+
+}
+.navbar-right {
+	padding: 22px;
+}
+
+.navbar a {
+color: black;
+}
+@font-face
+{
+font-family: 'StarmiX';
+src: url('./StarmiX Free.ttf') format('truetype');
+}
+.title 
+{
+	font-family: 'StarmiX';
+}
