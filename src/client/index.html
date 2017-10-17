@@ -49,8 +49,8 @@
         </p>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" ng-init="vm.navView = true" ng-mouseover="vm.navView = true" >
-        <ul class="nav navbar-nav navbar-right wow flipOutX " ng-mouseleave="vm.hide()" ng-if="vm.navView">
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" ng-init="vm.navView = true" ng-mouseover="vm.navView = true" ng-mouseleave="vm.navView = false">
+        <ul class="nav navbar-nav navbar-right wow flipOutX " ng-if="vm.navView">
           <li><a href="#">COREOGRAFÍAS</a></li>
           <li><a href="#">RENTA DE SMOKINGS<span class="sr-only">(current)</span></a></li>
           <li><a href="#">FOTOGRAFÍA</a></li>
@@ -139,6 +139,7 @@
   <!-- build:js js/app.js -->
   <!-- inject:js -->
   <script src="/src/client/app/app.module.js"></script>
+  <script src="/src/client/app/app.routing.js"></script>
   <!-- endinject -->
   <!-- inject:templates:js -->
   <!-- endinject -->
