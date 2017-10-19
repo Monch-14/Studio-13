@@ -22,13 +22,6 @@
       scrollContainer: null // optional scroll container selector, otherwise use window
     });
     wow.init();
-
-    vm.hide = hide;
-
-    function hide() {
-    	console.log('sfas');
-    	vm.navView = false;
-    }
   }
 
 })();

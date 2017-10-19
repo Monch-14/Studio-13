@@ -1,8 +1,8 @@
-# PideLaCarta
+# Studio-13
 
 ## Clonar Repositorio
-- `git clone git@gitlab.com:Delhipanda/PideLaCarta.git`
-Se creará una carpeta PideLaCarta en la carpeta donde esté la consola
+- `git clone https://github.com/Monch-14/Studio-13`
+Se creará una carpeta Studio-13 en la carpeta donde esté la consola
 
 **Generated from HotTowel Angular**
 
