@@ -45,14 +45,16 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <p class="grande" style="text-align: center; color: #ad23a1; font-family: 'Starmix';">Studio <span style="color: #ad23a1" ;>13</span>
-        </p>
+        <a href="#/!">
+          <p class="grande" href="#" style="text-align: center; color: #ad23a1; font-family: 'Starmix';">Studio <span style="color: #ad23a1" ;>13</span>
+          </p>
+        </a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" ng-init="vm.navView = true" ng-mouseover="vm.navView = true" ng-mouseleave="vm.navView = false">
         <ul class="nav navbar-nav navbar-right wow flipOutX " ng-if="vm.navView">
-          <li><a href="#">COREOGRAFÍAS</a></li>
-          <li><a href="#">RENTA DE SMOKINGS<span class="sr-only">(current)</span></a></li>
+          <li><a href="#!banana">COREOGRAFÍAS</a></li>
+          <li><a href="#!tomato">RENTA DE SMOKINGS<span class="sr-only">(current)</span></a></li>
           <li><a href="#">FOTOGRAFÍA</a></li>
           <li><a href="#">VIDEO/FILMACIÓN</a></li>
           <li class="dropdown">
@@ -80,6 +82,7 @@
     </div>
     <!-- /.container-fluid -->
   </nav>
+<<<<<<< HEAD
   <div class="col-xs-8 col-xs-offset-2">
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
@@ -127,6 +130,9 @@
   </a>
     </div>
   </div>
+=======
+  <ng-view></ng-view>
+>>>>>>> 4c3136753d69b663b5c36e495e77d7c42256f339
   <!-- build:js js/lib.js -->
   <!-- bower:js -->
   <script src="/bower_components/jquery/dist/jquery.js"></script>
@@ -140,6 +146,7 @@
   <script src="/bower_components/toastr/toastr.js"></script>
   <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
   <script src="/bower_components/wow/dist/wow.js"></script>
+  <script src="/bower_components/angular-route/angular-route.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:js js/app.js -->

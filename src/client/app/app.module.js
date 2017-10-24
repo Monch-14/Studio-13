@@ -1,13 +1,14 @@
 (function() {
   'use strict';
 
-  angular.module('app', [])
+  angular
+    .module('app', ['ngAnimate', 'ngRoute'])
     .controller('appController', appController);
 
   appController.$inject = [];
 
   function appController() {
-  	var vm = this;
+    var vm = this;
 
     var wow = new WOW({
       boxClass: 'wow', // animated element css class (default is wow)
