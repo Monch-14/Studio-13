@@ -35,7 +35,7 @@
 </head>
 
 <body ng-controller="appController as vm">
-  <nav class="navbar">
+  <nav class="navbar" ng-init="vm.navView = true" ng-mouseover="vm.navView = true" ng-mouseleave="vm.navView = false">
     <div class="container-fluid brand">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -51,8 +51,8 @@
         </a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" ng-init="vm.navView = true" ng-mouseover="vm.navView = true" ng-mouseleave="vm.navView = false">
-        <ul class="nav navbar-nav navbar-right wow flipOutX " ng-if="vm.navView">
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right wow bounceInDown " ng-if="vm.navView">
           <li><a href="#!banana">COREOGRAFÍAS</a></li>
           <li><a href="#!tomato">RENTA DE SMOKINGS<span class="sr-only">(current)</span></a></li>
           <li><a href="#">FOTOGRAFÍA</a></li>
