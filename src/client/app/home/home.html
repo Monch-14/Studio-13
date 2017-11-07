@@ -1,41 +1,92 @@
-<div class="col-xs-8 col-xs-offset-2">
-  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    </ol>
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="images/5a.jpg" alt="vals XV años">
-        <div class="carousel-caption">
-          VALS XV's
+<div class="row">
+  <div class="col-xs-8 col-xs-offset-2">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="images/5a.jpg" alt="vals XV años">
+          <div class="carousel-caption">
+            VALS XV's
+          </div>
         </div>
-      </div>
-      <div class="item">
-        <img src="images/6a.jpg" alt="coreografías">
-        <div class="carousel-caption">
-          ...
+        <div class="item">
+          <img src="images/6a.jpg" alt="coreografías">
+          <div class="carousel-caption">
+            ...
+          </div>
         </div>
-      </div>
-      <div class="item">
-        <img src="images/3a.jpg" alt="vals bodas">
-        <div class="carousel-caption">
-          ...
+        <div class="item">
+          <img src="images/3a.jpg" alt="vals bodas">
+          <div class="carousel-caption">
+            ...
+          </div>
         </div>
+        ...
       </div>
-      ...
-    </div>
-    <!-- Controls -->
-    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+    </div>
+  </div>
+</div>
+<br>
+<div class="container paquetes" ng-style="vm.backgroundImg">
+  <div class="row">
+    <div class="col-xs-4 item-container">
+      <div ng-mouseover="vm.backgroundImg = { 'background-image': 'url(images/www/p1.jpg)' }; vm.mouseOver = 1" ng-mouseleave="vm.backgroundImg = {}; vm.mouseOver = 0">
+        <div class="item">
+          <img ng-class="[vm.mouseOver !== 1 && vm.mouseOver !== 0 && vm.backgroundImg ? 'transparent' : '']" src="images/www/p1.jpg">
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-4 item-container">
+      <div ng-mouseover="vm.backgroundImg = { 'background-image': 'url(images/www/p2.jpg)' }; vm.mouseOver = 2" ng-mouseleave="vm.backgroundImg = {}; vm.mouseOver = 0">
+        <div class="item">
+          <img ng-class="[vm.mouseOver !== 2 && vm.mouseOver !== 0 && vm.backgroundImg ? 'transparent' : '']" src="images/www/p2.jpg">
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-4 item-container">
+      <div ng-mouseover="vm.backgroundImg = { 'background-image': 'url(images/www/p3.jpg)' }; vm.mouseOver = 3" ng-mouseleave="vm.backgroundImg = {}; vm.mouseOver = 0">
+        <div class="item">
+          <img ng-class="[vm.mouseOver !== 3 && vm.mouseOver !== 0 && vm.backgroundImg ? 'transparent' : '']" src="images/www/p3.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-4 item-container">
+      <div ng-mouseover="vm.backgroundImg = { 'background-image': 'url(images/www/p4.jpg)' }; vm.mouseOver = 4" ng-mouseleave="vm.backgroundImg = {}; vm.mouseOver = 0">
+        <div class="item">
+          <img ng-class="[vm.mouseOver !== 4 && vm.mouseOver !== 0 && vm.backgroundImg ? 'transparent' : '']" src="images/www/p4.jpg">
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-4 item-container">
+      <div ng-mouseover="vm.backgroundImg = { 'background-image': 'url(images/www/p5.jpg)' }; vm.mouseOver = 5" ng-mouseleave="vm.backgroundImg = {}; vm.mouseOver = 0">
+        <div class="item">
+          <img ng-class="[vm.mouseOver !== 5 && vm.mouseOver !== 0 && vm.backgroundImg ? 'transparent' : '']" src="images/www/p5.jpg">
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-4 item-container">
+      <div ng-mouseover="vm.backgroundImg = { 'background-image': 'url(images/www/p1.jpg)' }; vm.mouseOver = 1" ng-mouseleave="vm.backgroundImg = {}; vm.mouseOver = 0">
+        <div class="item">
+          <img ng-class="[vm.mouseOver !== 1 && vm.mouseOver !== 0 && vm.backgroundImg ? 'transparent' : '']" src="images/www/p3.jpg">
+        </div>
+      </div>
+    </div>
   </div>
 </div>
