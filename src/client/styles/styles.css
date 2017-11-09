@@ -55,10 +55,10 @@ src: url('./StarmiX Free.ttf') format('truetype');
 	    -ms-transition: all .50s ease-in-out;
 	     -o-transition: all .50s ease-in-out;
 	        transition: all .50s ease-in-out;
-	height: 400px;
+	height: 550px;
 	-webkit-filter: grayscale(50%); /* Safari */
     filter: grayscale(50%);
-	/*background-image: url('../images/www/p1.jpg');*/
+	background-size: 100% 100%;
 }
 
 .paquetes .item-container
@@ -71,7 +71,7 @@ src: url('./StarmiX Free.ttf') format('truetype');
 	margin: 0px;
 	padding: 0px;
 	border: 5px solid black;
-	height: 200px;
+	height: 275px;
 	width: 100%;
 }
 
