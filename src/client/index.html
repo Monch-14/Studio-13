@@ -35,7 +35,7 @@
 </head>
 
 <body ng-controller="appController as vm">
-  <nav class="navbar">
+  <nav class="navbar"  ng-init="vm.navView = false" ng-mouseover="vm.navView = true" ng-mouseleave="vm.navView = false">
     <div class="container-fluid brand">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -45,17 +45,17 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a href="#/!">
-          <p class="grande" href="#" style="text-align: center; color: #ad23a1; font-family: 'Starmix';">Studio <span style="color: #ad23a1" ;>13</span>
+     
+          <p class="grande" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" style="text-align: center; color: #ad23a1; font-family: 'Starmix';">Studio <span style="color: #ad23a1" ;>13</span>
           </p>
-        </a>
+      
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" ng-init="vm.navView = false" ng-mouseover="vm.navView = true" ng-mouseleave="vm.navView = false">
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right wow bounceInDown " ng-show="vm.navView">
           <li><a href="#!paquetes">COREOGRAFÍAS</a></li>
           <li><a href="#!Smoking">RENTA DE SMOKINGS<span class="sr-only">(current)</span></a></li>
-          <li><a href="#">FOTOGRAFÍA</a></li>
+          <li><a href="#!fotografia">FOTOGRAFÍA</a></li>
           <li><a href="#">VIDEO/FILMACIÓN</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MÁS <span class="caret"></span></a>

@@ -11,6 +11,9 @@
         })
         .when('/Smoking', {
           templateUrl : 'app/Smoking/Smoking.html'
+        })
+        .when('/fotografia', {
+          templateUrl : 'app/fotografia/fotografia.html'
         });
-    });
+      });
 })();

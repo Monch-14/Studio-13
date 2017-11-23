@@ -1,88 +1,108 @@
-.grande{ 
-font-size: 70px;
-background-color: black;
+.grande {
+  font-size: 70px;
+  background-color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
-.chico{
-	font-size: 40px;
+
+.chico {
+  font-size: 40px;
 }
 
 .brand {
-	padding:0;
+  padding: 0;
 }
 
-.chico{
-	font-size: 20px;
+body {
+  background-image: url(../images/aaaa.jpg);
 }
-.item{
-	height: 400px;
-}
-.item img{ 
-	height: none;
-	height: 100%;
-	width: 100%;
-	
-}
-.navbar{
-	color: black;
-	margin-bottom: 0px;
-	z-index: 10;
-	/*position: fixed;*/
-	width: 100vw;
-	background-color: rgba(255, 255, 255, 0);
-	border: none;
 
+.chico {
+  font-size: 20px;
 }
+
+.item {
+  height: 400px;
+}
+
+.item img {
+  height: none;
+  height: 100%;
+  width: 100%;
+}
+
+.navbar {
+  color: white;
+  margin-bottom: 0px;
+  z-index: 10;
+  /*position: fixed;*/
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+
 .navbar-right {
-	padding: 22px;
+  padding: 22px;
 }
 
 .navbar a {
-color: black;
+  color: white;
 }
-@font-face
-{
-font-family: 'StarmiX';
-src: url('./StarmiX Free.ttf') format('truetype');
+
+.navbar a:hover, .navbar a:focus, .nabar a:active {
+  background-color: purple !important;
 }
-.title 
-{
-	font-family: 'StarmiX';
+
+@font-face {
+  font-family: 'StarmiX';
+  src: url('./StarmiX Free.ttf') format('truetype');
+}
+
+.title {
+  font-family: 'StarmiX';
 }
 
 .paquetes {
-	-webkit-transition: all .50s ease-in-out;
-	   -moz-transition: all .50s ease-in-out;
-	    -ms-transition: all .50s ease-in-out;
-	     -o-transition: all .50s ease-in-out;
-	        transition: all .50s ease-in-out;
-	height: 550px;
-	-webkit-filter: grayscale(50%); /* Safari */
-    filter: grayscale(50%);
-	background-size: 100% 100%;
+  -webkit-transition: all .50s ease-in-out;
+  -moz-transition: all .50s ease-in-out;
+  -ms-transition: all .50s ease-in-out;
+  -o-transition: all .50s ease-in-out;
+  transition: all .50s ease-in-out;
+  height: 550px;
+  -webkit-filter: grayscale(50%);
+  /* Safari */
+  filter: grayscale(50%);
+  background-size: 100% 100%;
 }
 
-.paquetes .item-container
- {
-	padding: 0px;
-	margin: 0px;
+.paquetes .item-container {
+  padding: 0px;
+  margin: 0px;
 }
 
 .paquetes .item {
-	margin: 0px;
-	padding: 0px;
-	border: 5px solid black;
-	height: 275px;
-	width: 100%;
+  margin: 0px;
+  padding: 0px;
+  border: 5px solid black;
+  height: 275px;
+  width: 100%;
 }
 
 .paquetes .item img {
-	-webkit-filter: 0; /* Safari 6.0 - 9.0 */
-    filter: 0;
-	height: 100%;
-	width: 100%;
+  -webkit-filter: 0;
+  /* Safari 6.0 - 9.0 */
+  filter: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .transparent {
-	opacity: 0;
-    filter: alpha(opacity=0); /* For IE8 and earlier */
+  opacity: 0;
+  filter: alpha(opacity=0);
+  /* For IE8 and earlier */
+}
+
+.tat {
+	height: 350px;
+	margin-bottom: 20px
 }
