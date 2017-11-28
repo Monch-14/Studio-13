@@ -14,6 +14,12 @@
         })
         .when('/fotografia', {
           templateUrl : 'app/fotografia/fotografia.html'
+        })
+        .when('/paquete', {
+          templateUrl : 'app/paquete/paquete.html', 
+          controller: PaqueteController, 
+          controllerAs: 'vm'
         });
+
       });
 })();

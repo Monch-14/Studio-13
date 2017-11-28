@@ -106,3 +106,9 @@ body {
 	height: 350px;
 	margin-bottom: 20px
 }
+.no-decorators:link,
+.no-decorators:visited,
+.no-decorators:hover,
+.no-decorators:active {
+text-decoration:none; 
+}
